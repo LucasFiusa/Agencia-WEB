@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="js/menu-lateral.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <title>Agência WEB</title>
+</head>
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Logo da Agência WEB">
+        </a>
+
+        <nav id="navbar">
+            <ul id="navbar_list">
+                <li><a href="#slider">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#curse">Cursos</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#testimonials">Avaliações</a></li>
+                <li><a href="#login">Contato</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="btn-default">
+            Saiba mais
+        </a>
+
+        <!-- menu responsivo -->
+
+        <button id="menu_icon">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="menu_lateral">
+            <div id="close_icon">
+                <i class="fa-solid fa-x"></i>
+            </div> <!--close icon-->
+
+            <ul id="menu_list">
+                <li><a href="#slider">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#curse">Cursos</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#testimonials">Avaliações</a></li>
+                <li><a href="#login">Contato</a></li>
+            </ul>
+            
+            <a href="#" class="btn-default">
+                Saiba mais
+            </a>
+        </nav>
+        <div id="overlay_menu"></div>
+    </header>
+
+    <main>
+        <section class="slider">
+            <div class="slider-content">
+                
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+    
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="images/slider-dev.png" alt="Curso de DEV de Software">
+                    <img class="img-mobile" src="images/slider-dev-mb.png" alt="Curso de DEV de Software">
+                    <h2 class="slider-cursos">Desenvolvimento <span>de Sites.</span></h2>
+                </div>
+    
+                <div class="slide-box">
+                    <img class="img-desktop" src="images/slider-mk.png" alt="Curso de Marketing Digital">
+                    <img class="img-mobile" src="images/slider-mk-mb.png" alt="Curso de Marketing Digital">
+                    <h2 class="slider-cursos">Marketing <span>Digital.</span></h2>
+                </div>
+    
+                <div class="slide-box">
+                    <img class="img-desktop" src="images/slider-sm.png" alt="Curso de Social Media">
+                    <img class="img-mobile" src="images/slider-sm-mb.png" alt="Curso de Social Media">
+                    <h2 class="slider-cursos">Social <span>Media.</span></h2>
+                </div>
+    
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+    
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+    
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,110 @@
+section.slider{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    padding: 30px 0 !important;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input, .img-mobile{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s ease-in-out;
+}
+
+.slide-box img{
+    width: 80%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 14px 4px #5272ffb7;
+}
+
+.slider-cursos{
+    position: absolute;
+    bottom: 35%;
+    left: 15%;
+    font-size: 3rem;
+    color: #5271ff;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    line-height: 45px;
+
+    span{
+        color: #fff;
+    }
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 22%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #5271ff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: 0.2s ease-in;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 20px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: #5271ff;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: #5271ff;
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: #5271ff;
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: #5271ff;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+@media screen and (max-width: 1000px) {
+    .img-desktop{
+        display: none;
+    }
+    .img-mobile{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .nav-manual, .nav-auto{
+        margin-top: 40%;
+    }
+}
