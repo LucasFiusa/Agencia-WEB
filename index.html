@@ -17,7 +17,7 @@
 
         <nav id="navbar">
             <ul id="navbar_list">
-                <li><a href="#slider">Início</a></li>
+                <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#curse">Cursos</a></li>
                 <li><a href="#projects">Projetos</a></li>
@@ -37,12 +37,12 @@
         </button>
 
         <nav id="menu_lateral">
-            <div id="close_icon">
+            <button id="close_icon">
                 <i class="fa-solid fa-x"></i>
-            </div> <!--close icon-->
+            </button> <!--close icon-->
 
             <ul id="menu_list">
-                <li><a href="#slider">Início</a></li>
+                <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#curse">Cursos</a></li>
                 <li><a href="#projects">Projetos</a></li>
@@ -58,7 +58,7 @@
     </header>
 
     <main>
-        <section class="slider">
+        <figure class="slider">
             <div class="slider-content">
                 
                 <input type="radio" name="btn-radio" id="radio1">
@@ -96,6 +96,40 @@
                 </div>
     
             </div>
+        </figure>
+
+        <section id="home" class="interface">
+            <article id="cta">
+                <h1 id="cta_title">
+                    Explore as Soluções que Levam sua Marca ao <span>Próximo Nível!</span>
+                </h1>
+
+                <p id="cta_description">
+                    Na Agência Web, criamos estratégias personalizadas e soluções inovadoras para impulsionar a presença digital da sua marca. Descubra como podemos ajudar você a crescer no ambiente online.
+                </p>
+
+                <div id="social-media">
+                    <a href="#" class="social-media-btn">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="social-media-btn">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="social-media-btn">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#" class="social-media-btn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div> <!--social media-->
+            </article>
+
+            <aside id="cta_img">
+                <img src="images/cta-image.png" alt="Imagem Ilustrativa da Home">
+            </aside>
         </section>
     </main>
 </body>
