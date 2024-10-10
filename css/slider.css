@@ -108,3 +108,14 @@ figure.slider{
         margin-top: 40%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .slider-cursos{
+        font-size: 1.5rem;
+        line-height: 20px;
+    }
+    .nav-manual .manual-btn, .nav-auto div{
+        padding: 6px;
+    }
+
+}

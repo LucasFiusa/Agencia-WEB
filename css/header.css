@@ -70,6 +70,9 @@
     font-size: 1.5rem;
     margin-bottom: 50px;
     cursor: pointer;
+    color: #fff;
+    border: none;
+    background-color: transparent;
 }
 
 #menu_list{
