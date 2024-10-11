@@ -29,7 +29,7 @@
     text-align: justify;
 }
 
-#social-media{
+#social_media{
     display: flex;
     width: 50%;
     justify-content: space-around;
@@ -39,7 +39,7 @@
     box-shadow: 0px 0px 14px 4px rgba(255, 255, 255, 0.233);
 }
 
-#social-media .social-media-btn{
+#social_media .social-media-btn{
     text-decoration: none;
     color: #5271ff;
     background-color: #fff;
@@ -56,7 +56,7 @@
     }
 }
 
-#social-media .social-media-btn:hover{
+#social_media .social-media-btn:hover{
     opacity: 0.5;
 }
 
@@ -77,7 +77,21 @@
         text-align: center;
         align-items: center;
     }
+    #cta_title{
+        display: flex;
+        flex-direction: column;
+    }
     #cta_description{
         text-align: center;
+    }
+    #cta_img{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    #social_media{
+        width: 100%;
     }
 }
