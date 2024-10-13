@@ -130,6 +130,6 @@
 
 @media screen and (max-width: 600px) {
     #menu_lateral.abrir-menu{
-        width: 60vw;
+        width: 80vw;
     }
 }
