@@ -35,3 +35,19 @@ body{
     background-color: #fff;
     color: #202020;
 }
+
+.sections-title{
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 20px;
+}
+
+.sections-subtitle{
+    text-align: center;
+    color: #5271ff;
+    font-weight: 500;
+    margin-top: 5px;
+}
