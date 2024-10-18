@@ -1,0 +1,127 @@
+#projects{
+    min-height: 100vh;
+    width: 100%;
+    box-shadow: 0px 0px 14px 4px #ffffff17;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content_titles{
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+}
+
+#content_titles .sections-title, #content_titles .sections-subtitle{
+    text-align: start;
+    line-height: 25px;
+}
+
+/* Container dos cards */
+.card-container {
+    padding: 40px 10px;
+    width: 50%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    scroll-behavior: smooth;
+    transition: transform .3s ease-in;
+}
+
+.card-track {
+    display: flex;
+    white-space: nowrap;
+}
+
+.card-pjt {
+    display: inline-block;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: opacity 0.3s ease;
+    background-size: cover;
+    background-position: 100% 0%;
+    cursor: pointer;
+    position: relative;
+    transition: background-position 8s;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000007c;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.card-container::-webkit-scrollbar {
+    height: 8px;
+}
+ 
+.card-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+ 
+.card-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.card-pjt:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    background-position: 100% 100%;
+}
+     
+.card-container:hover .card-pjt {
+    transform: scale(0.9);
+    opacity: 0.6;
+}
+
+.card-container:hover .card-pjt:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+     
+@media screen and (max-width: 1400px) {
+    #projects{
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 100px;
+    }
+    #content_titles{
+        width: 100%;
+    }
+    #content_titles .sections-title, #content_titles .sections-subtitle{
+        text-align: center;
+    }
+    .card-container{
+        width: 80%;
+    }
+}
