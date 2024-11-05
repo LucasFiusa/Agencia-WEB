@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="js/menu-lateral.js" defer></script>
     <script src="js/slider.js" defer></script>
+    <script src="js/login.js" defer></script>
+    <script src="js/next.js" defer></script>
     <title>Agência WEB</title>
 </head>
 <body>
@@ -368,6 +370,81 @@
                 </article>
             </div>
         </section>
+
+        <section id="login" class="interface">
+            <form action="" id="formContato">
+                <h4>Entre em Contato</h4>
+
+                <div id="container_form">
+                    <div class="content-input">
+                        <input required type="text" name="firstName" id="btnFName" placeholder="Nome">
+                        <input required type="text" name="lastName" id="btnLName" placeholder="Sobrenome">
+                    </div> <!--content input-->
+
+                    <div class="content-input">
+                        <input required type="email" name="Email" id="btnEmail" placeholder="Email">
+                    </div> <!--content input-->
+
+                    <div class="content-input">
+                        <div class="select-menu">
+                            <div class="btn-select" id="btnSubj">
+                                <span class="sBtn-text">Escolha seu Curso</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div> <!--btn select-->
+
+                            <ul class="options">
+                                <li class="option">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                    <span class="option-text">Desenvolvimento Web</span>
+                                </li>
+                                <li class="option">
+                                    <i class="fa-solid fa-comment-dollar"></i>
+                                    <span class="option-text">Marketing Digital</span>
+                                </li>
+                                <li class="option">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <span class="option-text">Social Media</span>
+                                </li>
+                            </ul>
+                        </div> <!--select menu-->
+                    </div> <!--content input-->
+                </div> <!--container form-->
+
+                    <input type="submit" value="Enviar" id="submit">
+                </a>
+            </form>
+
+            <article id="login_titles">
+                <h2 class="sections-title">
+                    Fale Conosco
+                </h2>
+    
+                <h3 class="sections-subtitle">
+                    Estamos prontos para ajudar! Envie sua mensagem e vamos juntos criar soluções digitais para o seu negócio.
+                </h3>
+            </article>
+        </section>
     </main>
+
+    <footer class="interface">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Logo da Agência WEB">
+        </a>
+
+        <p>Desenvolvido por <span>Lucas Fiusa de Abreu&copy</span></p>
+
+        <div id="contact_media">
+            <a target="_blank" href="https://github.com/LucasFiusa" class="btn-social-media">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/lucas-fiusa-dev/" class="btn-social-media">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/lcfiusa" class="btn-social-media">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div> <!--content media-->
+
+    </footer>
 </body>
 </html>

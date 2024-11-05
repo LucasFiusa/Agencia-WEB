@@ -1,0 +1,227 @@
+#login{
+    min-height: 100vh;
+    box-shadow: 0px 0px 14px 4px #ffffff17;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form{
+    background-color: #5271ff;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 5%;
+    border-radius: 10px;
+    height: 60vh;
+}
+
+form h4{
+    font-size: 1.9rem;
+    font-weight: 650;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+#container_form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-input{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
+}
+
+input[type = "text"], input[type = "email"]{
+    border: none;
+    width: 49%;
+    padding: 13px 4%;
+    border-radius: 8px;
+    outline: none;font-size: 1rem;
+    font-weight: 400;
+    box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+input::placeholder{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #00000088;
+}
+
+#btnEmail, #btnSubj{
+    width: 100%;
+    border: none;
+    padding: 13px 3%;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.select-menu{
+    width: 100%;
+    position: relative;
+}
+
+.select-menu .btn-select{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #00000088;
+}
+
+.sBtn-text{
+    font-weight: 500;
+}
+
+.btn-select i{
+    font-size: 1rem;
+    transition: .2s ease-in-out;
+}
+
+.select-menu.active .btn-select i{
+    transform: rotate(-180deg);
+}
+
+.select-menu .options{
+    position: absolute;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+    list-style: none;
+    box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: none;
+    width: 100%;
+}
+
+.select-menu.active .options{
+    display: block;
+    z-index: 99999;
+}
+
+.options .option{
+    display: flex;
+    cursor: pointer;
+    padding: 20px 30px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.options .option:nth-child(1){
+    i{
+        margin-right: 10px;
+        font-size: 18px;
+    }
+}
+.options .option:nth-child(2){
+    i{
+        margin-right: 14px;
+        font-size: 18px;
+    }
+}
+.options .option:nth-child(3){
+    i{
+        margin-right: 18px;
+        font-size: 18px;
+    }
+}
+
+.option:hover{
+    background-color: #f2f2f2;
+}
+
+#submit{
+    width: 26%;
+    border-radius: 35px;
+    box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #5271ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    font-size: 1rem;
+    gap: 0.3em;
+    text-decoration: none;
+    transition: .3s ease-in;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#submit:hover{
+    scale: 1.05;
+}
+
+#submit input{
+    background-color: #fff;
+    border: none;
+    outline: none;
+    color: #5271ff;
+    border-radius: 35px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#login_titles{
+    width: 45%;
+}
+
+#login_titles .sections-title, #login_titles .sections-subtitle{
+    text-align: left;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px){
+    #login{
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
+    form{
+        width: 100%;
+        height: 70vh;
+        padding: 20px 5%;
+    }
+    #login_titles{
+        width: 100%;
+    }
+    #login_titles .sections-title, #login_titles .sections-subtitle{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    form{
+        height: 75vh;
+    }
+    .content-input{
+        justify-content: center;
+        flex-direction: column;
+        gap: 7px;
+    }
+    input[type="text"]{
+        width: 100%;
+    }
+    #submit{
+        width: 50%;
+    }
+    .options{
+        font-size: .8rem;
+    }
+}
