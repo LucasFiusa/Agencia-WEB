@@ -7,7 +7,7 @@ selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"))
 
 options.forEach(option => {
     option.addEventListener("click", ()=>{
-        let selectedOption = option.querySelector(".option-text").innerText;
+        const selectedOption = option.querySelector(".option-text").innerText;
         sBtn_text.innerText = selectedOption;
         
         optionMenu.classList.remove("active");

@@ -1,7 +1,7 @@
-let btnMenu = document.getElementById('menu_icon');
-let menu = document.getElementById('menu_lateral');
-let overlay = document.getElementById('overlay_menu');
-let body = document.body;
+const btnMenu = document.getElementById('menu_icon');
+const menu = document.getElementById('menu_lateral');
+const overlay = document.getElementById('overlay_menu');
+const body = document.body;
 
 btnMenu.addEventListener('click', () => {
     menu.classList.add('abrir-menu');
@@ -21,7 +21,7 @@ overlay.addEventListener('click', () => {
 // SCROLL
 
 window.addEventListener("scroll", function(){
-    let header = document.querySelector('#header')
+    const header = document.querySelector('#header')
     header.classList.toggle('rolagem', window.scrollY > 0)
 })
 
