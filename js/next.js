@@ -7,7 +7,7 @@ if (window.location.pathname.includes("index.html")) {
         const sobrenome = document.getElementById("btnLName").value;
 
         // Redireciona para a página de agradecimento na pasta 'html'
-        window.location.href = `html/agradecimento.html?nome=${encodeURIComponent(nome)}&sobrenome=${encodeURIComponent(sobrenome)}`;
+        window.location.href = `/seu-repositorio/html/agradecimento.html?nome=${encodeURIComponent(nome)}&sobrenome=${encodeURIComponent(sobrenome)}`;
     });
 }
 
