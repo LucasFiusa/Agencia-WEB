@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style.css">
     <title>Agência WEB</title>
     <style>
         body{
             height: 100vh;
-            padding: 0px 10%;
+            padding: 30px 10%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -18,7 +19,6 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            padding: 40px;
         }
         h1{
             text-align: center;
@@ -27,13 +27,25 @@
             letter-spacing: 4px;
             font-weight: 600;
         }
-        div{
-            height: 150px;
+        a{
+            background-color: #5271ff;
+            text-decoration: none;
+            color: #fff;
+            padding: 20px 80px;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: 500;
+            transition: .3s ease-in-out;
+        }
+        a:hover{
+            background-color: #738dff;
+            scale: 1.05;
         }
 
         @media screen and (max-width: 700px) {
             h1{
-                font-size: 1.4rem;
+                font-size: 1rem;
             }
         }
     </style>
@@ -43,14 +55,10 @@
         <img src="../images/logo.png" alt="Logo da Agência WEB" width="140">
     </figure>
 
-    <h1 id="h1"></h1>
+    <h1>Agradecemos sua mensagem! Em breve, entraremos em contato com você por e-mail. Fique atento e, se tiver mais dúvidas, estamos à disposição!</h1>
 
-    <div>
-        <!--  -->
-        <!--  -->
-        <!--  -->
-    </div>
-
-    <script src="../js/next.js"></script>
+    <a href="../index.html">
+        <i class="fa-solid fa-reply"></i> Voltar
+    </a>
 </body>
 </html>

@@ -4,6 +4,15 @@
     align-items: center;
     width: 100vw;
     padding: 10px 10%;
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    z-index: 99999999999;
+}
+
+#header.rolagem{
+    border-bottom: 1.5px solid #ffffff17;
+    height: auto;
 }
 
 .logo{
@@ -117,6 +126,12 @@
     left: 0;
     z-index: 444;
     display: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
